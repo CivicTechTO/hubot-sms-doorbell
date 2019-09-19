@@ -2,6 +2,8 @@
 
 Ping Slack teams via text message using voip.ms
 
+![screenshot of interaction explained below](/docs/screenshot.png)
+
 Do you organize an event-based community (e.g. meetup), and wish for
 any easy way to let confused people get access to the venue? This will
 help you with that!
