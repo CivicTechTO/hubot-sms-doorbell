@@ -48,10 +48,10 @@ Then add **hubot-sms-doorbell** to your `external-scripts.json`:
 
 1. Someone texts "help! I'm locked out" to Voip.ms doorbell number from 555-555-5555
 2. Bot drops messages in Slack channels:
-  - Relays "help! I'm locked out" in `#organizing-open`
-  - Relays phone number 555-555-55555 in `#organizing-priv` (optional)
+    - Relays "help! I'm locked out" in `#organizing-open`
+    - Relays phone number 555-555-55555 in `#organizing-priv` (optional)
 3. Slack users are encouraged to add reaction to message in `#organizing-open`
-  - For sake of example, a user named "dilini" reacts
+    - For sake of example, a user named "dilini" reacts
 4. Both the texter at 555-555-5555 and the Slack thread receive a confirmation that
    "dilini has acknowledged your message with a :rocket: emoji"
 
