@@ -109,13 +109,13 @@ module.exports = (robot) ->
     reacting_user = res.message.user.name
     reacting_emoji = res.message.reaction
 
-    robot.logger.debug "Reacting to bot message: " + reacted_msg.ts
+    robot.logger.debug "Reacting to bot message: #{reacted_msg.ts}"
 
     web.conversations.history reacted_msg.channel, {latest: reacted_msg.ts, limit: 1, inclusive: true}
       .then (resp) ->
         reacted_message = resp.messages[0]
         if reacted_message.attachments? and reacted_message.attachments[0].callback_id.startsWith 'hubot_doorbell'
-          robot.logger.debug "Reacting to doorbell bot message: " reacting_emoji
+          robot.logger.debug "Reacting to doorbell bot message: #{reacting_emoji}"
 
           dest_phone = reacted_message.attachments[0].callback_id.replace 'hubot_doorbell_caller_', ''
           sms_auto_response = "Auto-response: #{reacting_user} acknowledged your message with a :#{reacting_emoji}: emoji"
