@@ -19,7 +19,7 @@
 #   - Full instructions: https://github.com/CivicTechTO/hubot-toby/wiki/Script:-SMS-Doorbell
 #
 # Commands:
-#   None.
+#   None
 #
 # Author:
 #   patcon@github
